@@ -1,0 +1,20 @@
+<div class="show-grid">
+  <div class="hotel-info">
+    <h1><%= @room.hotel.name %></h1>
+    <p><%= @room.hotel.address %></p>
+      <% if @room.hotel.name == "Rocky Pop Hotel" %>
+        <%= image_tag "rockypop.png" %>
+      <% elsif @room.hotel.name == "Albert Premier" %>
+        <%= image_tag "albertpremier.jpg" %>
+      <% elsif @room.hotel.name == "Hotel des cristaliers" %>
+        <%= image_tag "cristal.jpeg" %>
+      <% else %>
+        <%= image_tag "oustalet.jpeg" %>
+      <% end %>
+  </div>
+  <%= render "shared/form_booking", room: @room %>
+</div>
+
+<div id="booking-form-div"
+     data-bookings="<%= @bookings_dates.to_json %>">
+</div>

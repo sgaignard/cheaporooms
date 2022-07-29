@@ -1,0 +1,7 @@
+<div class="cards">
+  <% @rooms.each do |room| %>
+    <%= link_to room_path(room), class: "link-to" do %>
+      <%= render "shared/card", room: room %>
+    <% end %>
+  <% end %>
+</div>

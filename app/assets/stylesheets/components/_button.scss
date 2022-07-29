@@ -1,0 +1,15 @@
+.cool-button {
+  background-color: $light-gray;
+  border: solid black 1px;
+  padding: 8px 24px;
+  border-radius: $border-radius;
+  box-shadow: 3px 3px 0px black;
+  text-decoration: none;
+  color: inherit;
+  &:hover {
+    text-decoration: none;
+    color: inherit;
+    box-shadow: 1px 1px 0 black;
+    transition: .18s ease-in-out;
+  }
+}

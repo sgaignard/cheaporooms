@@ -1,0 +1,11 @@
+.hotel-info {
+  img {
+    height: 500px;
+    object-fit: cover;
+    border-radius: $border-radius;
+    border: solid black 1px;
+  }
+  p {
+    font-size: 24px;
+  }
+}

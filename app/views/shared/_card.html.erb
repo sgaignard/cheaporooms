@@ -1,0 +1,26 @@
+<div class="card-room">
+  <% if room.capacity == 8 %>
+    <img src="https://picsum.photos/id/1008/400/600" />
+  <% elsif room.capacity == 7 %>
+    <img src="https://picsum.photos/id/1036/400/600" />
+  <% elsif room.capacity == 6 %>
+    <img src="https://picsum.photos/id/1079/400/600" />
+  <% elsif room.capacity == 5 %>
+    <img src="https://picsum.photos/id/128/400/600" />
+  <% elsif room.capacity == 4 %>
+    <img src="https://picsum.photos/id/543/400/600" />
+  <% elsif room.capacity == 3 %>
+    <img src="https://picsum.photos/id/433/400/600" />
+  <% elsif room.capacity == 2 %>
+    <img src="https://picsum.photos/id/522/400/600" />
+  <% else %>
+    <img src="https://picsum.photos/id/2/400/600" />
+  <% end %>
+  <div class="card-room-infos">
+    <div>
+      <h2><%= room.hotel.name %></h2>
+      <p>Sleeps: <%= room.capacity %></p>
+    </div>
+    <h2 class="card-room-pricing"><%= room.price_per_night %>€ /night</h2>
+  </div>
+</div>
